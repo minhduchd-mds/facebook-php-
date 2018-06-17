@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Chat tin nhắn</title>
+    <!------Bootstrap------>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!------Style------>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font-Rotobo ,Lato ,Oswald,Raleway -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Raleway:400,300,500,600,700,800|Roboto" rel="stylesheet">
+</head>
+<body>
+<section id="theme">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="box-list-left-container">
+                    <!----------------cài đặt---------------->
+                    <div class="box-icon-list-use">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a data-toggle="modal" data-target="#myModal" href="#">Cài Đặt</a></li>
+                                <li><a href="#">Liên Hệ </a></li>
+                                <li><a href="#">Tin Hệ Đang Chờ</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" data-toggle="modal" data-target="#create"><i class="fa fa-pencil-square-o"></i></a>
+                    </div>
+                    <!---------------- tuy chỉnh ---------------->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="smyModalLabel">Tùy Chỉnh</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="setting">
+                                        <nav class="settting-nav">
+                                            <div class="setting-headding text-center">Cài hình nền</div>
+                                            <div class="setting-hover">
+                                                <a class="bg-1" href="#" onclick="myFunction()"><img src="3.gif"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction1()"><img src="imager/bg/4.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction2()"><img src="imager/bg/17.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction3()"><img src="imager/bg/18.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction4()"><img src="imager/bg/6.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction5()"><img src="imager/bg/7.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction6()"><img src="imager/bg/8.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction7()"><img src="imager/bg/9.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction8()"><img src="imager/bg/10.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction9()"><img src="imager/bg/16.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction10()"><img src="imager/bg/12.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction11()"><img src="imager/bg/13.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction12()"><img src="imager/bg/14.jpg"></a>
+                                                <a class="bg-1" href="#" onclick="myFunction13()"><img src="imager/bg/15.jpg"></a>
+                                            </div>
+                                            <div class="setting-headding text-center">Chọn màu cho cuộc trò chuyện </div>
+                                            <div class="setting-color">
+                                                <div href="#" class="edit_1" onclick="edit_1()"></div>
+                                                <div href="#" class="edit_2" onclick="edit_2()"></div>
+                                                <div href="#" class="edit_3" onclick="edit_3()"></div>
+                                                <div href="#" class="edit_4" onclick="edit_4()"></div>
+                                                <div href="#" class="edit_5" onclick="edit_5()"></div>
+                                                <div href="#" class="edit_6" onclick="edit_6()"></div>
+                                                <div href="#" class="edit_7" onclick="edit_7()"></div>
+                                                <div href="#" class="edit_8" onclick="edit_8()"></div>
+                                                <div href="#" class="edit_9" onclick="edit_9()"></div>
+                                                <div href="#" class="edit_10" onclick="edit_10()"></div>
+                                                <div href="#" class="edit_11" onclick="edit_11()"></div>
+                                                <div href="#" class="edit_12" onclick="edit_12()"></div>
+                                                <div href="#" class="edit_13" onclick="edit_13()"></div>
+                                                <div href="#" class="edit_14" onclick="edit_14()"></div>
+                                            </div>
+                                            <div class="setting-headding text-center">Âm Thanh</div>
+                                            <div class="check-setting text-center">
+                                                <div class="radio">
+                                                    <label><input type="radio" name="optradio">Tắt Âm thanh , thông báo</label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label><input type="radio" name="optradio">Âm báo tin nhắn từ máy tính</label>
+                                                </div>
+                                                <div class="radio disabled">
+                                                    <label><input type="radio" name="optradio" disabled>Xóa lịch sử </label>
+                                                </div>
+                                            </div>
+                                            <!----test demo----->
+                                            <div class="test-demo">
+
+                                            </div><!----End test demo----->
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Thoát</button>
+                                    <button type="submit" class="btn btn-info btn-simple">Gửi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end tùy chỉnh-->
+                    <!--viết tin nhắn-->
+                    <div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Viết tin nhắn</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form method="post" class="form-group">
+                                        <input type="search" placeholder="Tên" class="form-control">
+                                        <br>
+                                        <textarea typeof="text" placeholder="Lời nhắn" class="form-control"></textarea>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-info btn-simple" data-dismiss="modal">Gửi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end viết tin nhắn-->
+                    <div class="box-link-list-use">
+                        <ul>
+                            <li><a href="#messenger"  data-toggle="tab"><i class="fa fa-comment-o"></i></a></li>
+                            <li><a href="#list-messenger"  data-toggle="tab"><i class="fa fa-tty"></i></a></li>
+                            <li><a href="#group-chat"  data-toggle="tab"><i class="fa fa-users"></i></a></li>
+                            <li><a href="#menu-messenger"  data-toggle="tab"><i class="fa fa-sort-desc"></i></a></li>
+                        </ul>
+                    </div>
+                    <!---------------Tìm kiếm----------------->
+                    <div class="box-from-list">
+                         <form>
+                             <input type="search" class="form-control" placeholder="Tìm kiếm bạn bè và nhóm">
+                         </form>
+                     </div>
+                    <!-----------------Tin Nhắn mới cập nhập--------------->
+                    <div class="tab-pane fade in  active" id="messenger">
+                        <div class="xxx">
+                            <div class="box-navbar-list" id="scroll">
+                                <div class="box-navbar-list-thumbnail active">
+                                    <a href="#1" data-toggle="tab">
+                                        <div class="id-use">
+                                            <img src="imager/avata/2.png" alt="photo" class="img-responsive">
+                                            <div class="text-title">
+                                                <span>Diệp An</span>
+                                                <div class="time">15:0</div>
+                                                <p>Đã gửi từ hôm qua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="box-navbar-list-thumbnail">
+                                    <a href="#2" data-toggle="tab">
+                                        <div class="id-use">
+                                            <img src="imager/avata/3.jpg" alt="photo" class="img-responsive">
+                                            <div class="text-title">
+                                                <span>Ngọc Lan</span>
+                                                <div class="time">15:0</div>
+                                                <p>Đã gửi từ hôm qua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="box-navbar-list-thumbnail">
+                                    <a href="#3" data-toggle="tab">
+                                        <div class="id-use">
+                                            <img src="imager/avata/4.jpg" alt="photo" class="img-responsive">
+                                            <div class="text-title">
+                                                <span>Hằng</span>
+                                                <div class="time">15:0</div>
+                                                <p>Đã gửi từ hôm qua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="box-navbar-list-thumbnail">
+                                    <a href="#4" data-toggle="tab">
+                                        <div class="id-use">
+                                            <img src="imager/avata/5.jpg" alt="photo" class="img-responsive">
+                                            <div class="text-title">
+                                                <span>Ngọc</span>
+                                                <div class="time">15:0</div>
+                                                <p>Đã gửi từ hôm qua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="box-navbar-list-thumbnail">
+                                    <a href="#5" data-toggle="tab">
+                                        <div class="id-use">
+                                            <img src="imager/avata/6.jpg" alt="photo" class="img-responsive">
+                                            <div class="text-title">
+                                                <span>Ngọc Lan</span>
+                                                <div class="time">15:0</div>
+                                                <p>Đã gửi từ hôm qua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="box-navbar-list-thumbnail">
+                                    <a href="#5" data-toggle="tab">
+                                        <div class="id-use">
+                                            <img src="imager/avata/6.jpg" alt="photo" class="img-responsive">
+                                            <div class="text-title">
+                                                <span>Ngọc Lan</span>
+                                                <div class="time">15:0</div>
+                                                <p>Đã gửi từ hôm qua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------Đang trực tuyến--------------->
+                    <div class="tab-pane fade" id="list-messenger">
+                        <div class="item-list-messenger">
+                            <div class="item-messenger-img">
+                                <img src="imager/avata/20.jpg" class="img-responsive">
+                            </div>
+                            <span class="on-night"></span>
+                            <div class="item-messenger-icon">
+                                <a href="#"><i class="fa fa-tty"></i></a>
+                                <a href="#"><i class="fa fa-video-camera"></i></a>
+                                <a href="#"><i class="fa fa-microphone"></i></a>
+                            </div>
+                        </div>
+                        <div class="item-list-messenger">
+                            <div class="item-messenger-img">
+                                <img src="imager/avata/15.jpg" class="img-responsive">
+                            </div>
+                            <span class="on-night"></span>
+                            <div class="item-messenger-icon">
+                                <a href="#"><i class="fa fa-tty"></i></a>
+                                <a href="#"><i class="fa fa-video-camera"></i></a>
+                                <a href="#"><i class="fa fa-microphone"></i></a>
+                            </div>
+                        </div>
+                        <div class="item-list-messenger">
+                            <div class="item-messenger-img">
+                                <img src="imager/avata/16.jpg" class="img-responsive">
+                            </div>
+                            <span class="on-night"></span>
+                            <div class="item-messenger-icon">
+                                <a href="#"><i class="fa fa-tty"></i></a>
+                                <a href="#"><i class="fa fa-video-camera"></i></a>
+                                <a href="#"><i class="fa fa-microphone"></i></a>
+                            </div>
+                        </div>
+                        <div class="item-list-messenger">
+                            <div class="item-messenger-img">
+                                <img src="imager/avata/17.jpg" class="img-responsive">
+                            </div>
+                            <span class="on-night"></span>
+                            <div class="item-messenger-icon">
+                                <a href="#"><i class="fa fa-tty"></i></a>
+                                <a href="#"><i class="fa fa-video-camera"></i></a>
+                                <a href="#"><i class="fa fa-microphone"></i></a>
+                            </div>
+                        </div>
+                        <div class="item-list-messenger">
+                            <div class="item-messenger-img">
+                                <img src="imager/avata/18.jpg" class="img-responsive">
+                            </div>
+                            <span class="on-night"></span>
+                            <div class="item-messenger-icon">
+                                <a href="#"><i class="fa fa-tty"></i></a>
+                                <a href="#"><i class="fa fa-video-camera"></i></a>
+                                <a href="#"><i class="fa fa-microphone"></i></a>
+                            </div>
+                        </div>
+                        <div class="item-list-messenger">
+                            <div class="item-messenger-img">
+                                <img src="imager/avata/19.jpg" class="img-responsive">
+                            </div>
+                            <span class="on-night"></span>
+                            <div class="item-messenger-icon">
+                                <a href="#"><i class="fa fa-tty"></i></a>
+                                <a href="#"><i class="fa fa-video-camera"></i></a>
+                                <a href="#"><i class="fa fa-microphone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------danh sách nhóm--------------->
+                    <div class="tab-pane fade" id="group-chat">
+                        <div class="title-tab">Danh Sách Nhóm 0(200)</div>
+                    </div>
+                    <!---------------xem thêm----------------->
+                    <div class="tab-pane fade" id="menu-messenger">
+                        <div class="menu-messenger">
+                            <div class="col-sm-12 col-lg-12 col-md-12">
+                                <a href="#">
+                                    <div class="item">
+                                        <div class="item-icon"><i class="fa fa-plus-circle"></i></div>
+                                        <div class="item-text" data-toggle="modal" data-target="#Add-friend">Thêm Bạn</div>
+                                        <!-----------thêm bạn------------>
+                                        <div class="modal fade" id="Add-friend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-sm">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                        <h4 class="modal-title">Thêm bạn</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <label>Thêm Từ Email</label>
+                                                            <input type="email" name="email" class="form-control" placeholder="Nhập email">
+                                                            <label>Thêm Từ Facebook or số điện thoại</label>
+                                                            <input type="email" name="email" class="form-control" placeholder="Nhập email">
+                                                            <label>Thêm Từ số điện thoại</label>
+                                                            <select class="form-control" id="tel">
+                                                                <option>Việt nam (+84)</option>
+                                                                <option>Rwanda (+250)</option>
+                                                                <option>Kazakhstan (+7)</option>
+                                                                <option>Jordan (+962)</option>
+                                                            </select>
+                                                            <br>
+                                                            <input type="tel" name="tel"  for="tel" class="form-control" placeholder="Nhập số điện thoại">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn btn-info btn-simple" data-dismiss="modal">Gửi</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-lg-12 col-md-12">
+                                <a href="#">
+                                    <div class="item">
+                                        <div class="item-icon"><i class="fa fa-question-circle"></i></div>
+                                        <div class="item-text">Gợi Ý</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-lg-12 col-md-12">
+                                <a href="#">
+                                    <div class="item">
+                                        <div class="item-icon"><i class="fa fa-sign-in"></i></div>
+                                        <div class="item-text">Đăng Xuất</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------box meesenger-------->
+            <div class="col-sm-12 col-md-9 hidden-xs hidden-sm">
+                 <div class="box-text-right-container hidden-xs hidden-sm"  id="set-background">
+                     <div class="box-hedding tab-content nano">
+                         <div class="tab-pane fade in active" id="1">
+                             <div class="box-hedding-id">
+                                 <img src="imager/avata/2.png" alt="photo" class="img-responsive">
+                                 <div class="box-hedding-text">
+                                     <span>Diệp anh</span>
+                                     <div class="box-chat">
+                                         <a href="#"><i class="fa fa-tty"></i></a>
+                                         <a href="#"><i class="fa fa-video-camera"></i></a>
+                                     </div>
+                                     <p>Truy cập 25 phút trước</p>
+                                 </div>
+                             </div>
+                             <div class="box-messnger strong" data-toggle="bg-love" id="scrolling">
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/2.png" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <span>Hôm qua thế nào vậy anh !</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/2.png" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <span>Chúng ta có một đêm  lung linh ánh đèn cầy và lến</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use" >
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>Hello. một ngày</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/2.png" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <span>Tối nay anh có làm gì không qua em đi </span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/2.png" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <span>Em có cái này hay lắm a muốn thử sức không </span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div  class="tab-pane fade" id="2">
+                             <div class="box-hedding-id">
+                                 <img src="imager/avata/3.jpg" alt="photo" class="img-responsive">
+                                 <div class="box-hedding-text">
+                                     <span>Ngọc Lan</span>
+                                     <div class="box-chat">
+                                         <a href="#"><i class="fa fa-tty"></i></a>
+                                         <a href="#"><i class="fa fa-video-camera"></i></a>
+                                     </div>
+                                     <p>Truy cập 25 phút trước</p>
+                                 </div>
+                             </div>
+                             <div class="box-messnger">
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/3.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat">
+                                             <span>Hôm qua thế nào vậy anh !</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/3.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat">
+                                             <span>Chúng ta có một đêm  lung linh ánh đèn cầy và lến</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div  class="tab-pane fade" id="3">
+                             <div class="box-hedding-id">
+                                 <img src="imager/avata/4.jpg" alt="photo" class="img-responsive">
+                                 <div class="box-hedding-text">
+                                     <span>Hằng</span>
+                                     <div class="box-chat">
+                                         <a href="#"><i class="fa fa-tty"></i></a>
+                                         <a href="#"><i class="fa fa-video-camera"></i></a>
+                                     </div>
+                                     <p>Truy cập 25 phút trước</p>
+                                 </div>
+                             </div>
+                             <div class="box-messnger">
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/4.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <div class="text-box">Hôm qua thế nào vậy anh !</div>
+                                             <span class="ms_1"></span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/4.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <div class="text-box">Chúng ta có một đêm  lung linh ánh đèn cầy và lến</div>
+                                             <span class="ms_1"></span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="tab-pane fade" id="4">
+                             <div class="box-hedding-id">
+                                 <img src="imager/avata/5.jpg" alt="photo" class="img-responsive">
+                                 <div class="box-hedding-text">
+                                     <span>Ngọc</span>
+                                     <div class="box-chat">
+                                         <a href="#"><i class="fa fa-tty"></i></a>
+                                         <a href="#"><i class="fa fa-video-camera"></i></a>
+                                     </div>
+                                     <p>Truy cập 25 phút trước</p>
+                                 </div>
+                             </div>
+                             <div class="box-messnger">
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/5.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <div class="text-box">Hôm qua thế nào vậy anh !</div>
+                                             <span class="ms_1"></span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/5.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <div class="text-center">Chúng ta có một đêm  lung linh ánh đèn cầy và lến</div>
+                                             <span class="ms_1"></span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                         </div>
+                         </div>
+                         <div class="tab-pane fade" id="5">
+                             <div class="box-hedding-id">
+                                 <img src="imager/avata/6.jpg" alt="photo" class="img-responsive">
+                                 <div class="box-hedding-text">
+                                     <span>Ngọc Lan</span>
+                                     <div class="box-chat">
+                                         <a href="#"><i class="fa fa-tty"></i></a>
+                                         <a href="#"><i class="fa fa-video-camera"></i></a>
+                                     </div>
+                                     <p>Truy cập 25 phút trước</p>
+                                 </div>
+                             </div>
+                             <div class="box-messnger">
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/6.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat or">
+                                             <div class="text-box">Hôm qua thế nào vậy anh !</div>
+                                             <span class="ms_1"></span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-use">
+                                     <div class="avata-use">
+                                         <div class="box-messnger-chat-use of">
+                                             <span>(Dân trí) - Mẹ bị bệnh tật hành hạ đến khủng khiếp, bà nội cũng vừa đổ bệnh</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="box-messnger-id">
+                                     <div class="avata-id">
+                                         <div class="photo-id">
+                                             <img src="imager/avata/6.jpg" alt="photo" class="img-responsive">
+                                         </div>
+                                         <div class="box-messnger-chat">
+                                             <div class="text-box">Chúng ta có một đêm  lung linh ánh đèn cầy và lến</div>
+                                             <span class="ms_1"></span>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!----------------Sent meesenger---------------->
+                     <div class="box-footer">
+                         <div class="input-group">
+                             <input type="text"  class="form-control mytext"  placeholder="Gửi tin nhắn">
+                         </div>
+                         <div class="ul">
+                             <button class="bg_none" ><i class="fa fa-film hover"></i> </button>
+                             <button class="bg_none"><i class="fa fa-camera hover"></i> </button>
+                             <button class="bg_none"><i class="fa fa-microphone hover"></i> </button>
+                             <button class="bg_none" onclick="" ><i class="fa fa-gift hover"></i> </button>
+                             <button class="bg_none"><i class="fa fa-paperclip hover"></i></button>
+                             <button class="bg_none" onclick=""><i class="fa fa-thumbs-up hover"></i> </button>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/cutrum.js"></script>
+</body>
+</html>
