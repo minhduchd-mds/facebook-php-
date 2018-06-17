@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đời Công Nghệ ,Find the latest breaking news and information on the top stories, weather, business, entertainment, politics, and more.</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <script src="js/main.js"></script>
+    <!-- End of head section HTML codes -->
+    <link href="css/style-2.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/icon.png" />
+    <script>// Copyright 2014-2015 Twitter, Inc.
+    // Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+            document.createTextNode(
+                '@-ms-viewport{width:auto!important}'
+            )
+        )
+        document.querySelector('head').appendChild(msViewportStyle)
+    }</script>
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="header-logo text-center">
+                    <img src="images/logo.png"  />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="header-search-button">
+                    <div class="search">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Keywords, korean, fine, nuclear .... news in the country">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="button text-center">
+                        <button type="button" class="nbt btn-success">Latest news</button>
+                        <button type="button" class="nbt btn-info">Russia</button>
+                        <button type="button" class="nbt btn-info">China</button>
+                        <button type="button" class="nbt btn-info">East Sea</button>
+                        <button type="button" class="nbt btn-info">24H through</button>
+                        <button type="button" class="nbt btn-warning">Chosen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="header-icon-language">
+                    <ul id="lang">
+                        <li>
+                            <a href="#" class="zh">ZH</a>
+                        </li>
+                        <li>
+                            <a href="#" class="fr">FR</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="es">ES</a>
+                        </li>
+                        <li>
+                            <a href="#" class="de">DE</a>
+                        </li>
+                        <li>
+                            <a href="#" class="en langact">EN</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-send"></span> Send</button>
+                    <button type="button" class="btn btn-default">Fica</button>
+                    <button type="button" class="btn btn-default">Default</button>
+                    <p><i>Wish you all a happy day !</i><p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="row navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"  href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="new.html">News</a></li>
+                        <li><a href="index.html">World</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Technology<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Photos you</a></li>
+                                <li><a href="#">Paid Partner</a></li>
+                                <li><a href="#">In Case</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fast news<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Photos you</a></li>
+                                <li><a href="#">Paid Partner</a></li>
+                                <li><a href="#">In Case</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="new-item">
+                                <h2>North Korea has been taunting the US for years. Is Trump taking the bait?</h2>
+                            <hr class="color-hr">
+                            <div class="time">
+                                <i><span class="glyphicon glyphicon-calendar"
+                                         aria-hidden="true"></span>12th Jun 2017 </i>
+                                <i><a href="#"><span class="glyphicon glyphicon-dashboard"
+                                                     aria-hidden="true"></span> 18:45</a></i>
+                                <div class="like">
+                                    <span class="glyphicon glyphicon-comment"></span>
+                                    <span class="glyphicon glyphicon-name"></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="news-item-conten">
+                                <h4><span >Washington (CNN)North Korea put on a muscle-flexing display of artillery power Tuesday to mark a national holiday and thumb its nose at US President Donald Trump's declaration that the country has "gotta behave."</span></h4>
+                                <div class="listNews-lienket">
+                                    <ul>
+                                        <li><a href="#">North Korea's military parade: What we didn't see.</a> </li>
+                                        <li><a href="#">Seoul, with its population of about 10 million people.</a> </li>
+                                        <li><a href="#">And there are handy US targets as well. </a> </li>
+                                    </ul>
+                                </div>
+                                    <p>Washington (CNN)North Korea put on a muscle-flexing display of artillery power Tuesday to mark a national holiday and thumb its nose at US President Donald Trump's declaration that the country has "gotta behave."
+
+                                        Pyongyang staged the pounding display of large caliber guns used in land warfare -- perhaps a reminder that Seoul and its US military base lie within easy reach -- shortly after detaining an American teacher, the third US citizen held by the regime.
+                                        The US staged its own response, beginning joint naval drills in the region with South Korea and Japan as the aircraft carrier USS Carl Vinson moved toward the Korean peninsula and one of the most powerul submarines in the American arsenal arrived in South Korea -- part of an "armada" the US was sending to the region, Trump told the Fox Business Network in mid-April.
+                                        On Wednesday, the White House will hold an unusual briefing about the Hermit Kingdom, with Secretary of State Rex Tillerson, Defense Secretary James Mattis and other officials outlining the threat for the entire Senate. On Friday, Tillerson will host a meeting on North Korea at the UN. And on Monday, Trump called on visiting UN ambassadors to apply more sanctions on Pyongyang.
+                                    </p>
+                                    <div class="news-item-img">
+                                        <img src="images/news/1.jpg" class="img-responsive"/>
+                                    </div>
+                                    <p>
+                                        Tensions surrounding North Korea, long on the rise, have risen sharply since Trump took office. Pyongyang has continued its pursuit of nuclear weapons and the missile capability to deliver a bomb as far as the continental US, even as the new president has declared the status quo is "unacceptable."
+                                        Trump is making made a full-force effort to get China to pressure the rogue regime into compliance, declaring that if Beijing doesn't do something, "we will."
+                                        North Korea responded in a statement Tuesday, slamming the "ridiculous and foolhardy" Trump administration for taking steps that are "little short of lighting the fuse of a total war under the present touch-and-go situation on the Korean Peninsula."
+                                    </p>
+                                    <p style="text-align: right;"><strong>Ana Korew</strong></p>
+                                </div>
+                                <!-----------dist like----------->
+                                <div class="dist-like">
+                                    <h5>Do you like this article ?</h5>
+                                    <button><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>Like </button>
+                                    <button><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>Dist</button>
+                                </div><!-----------End dist like----------->
+                                <div class="bglinedetailshow"></div>
+                                <div class="taps">
+                                    <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+                                    <span>Tags:</span>
+                                    <a href="#">TRums</a>
+                                    <a href="#">USS Carl Vinson</a>
+                                    <a href="#"> Weakness</a>
+                                    <a href="#">Korean peninsula</a>
+                                    <a href="#">US warships</a>
+                                    <a href="#">Tomahawk </a>
+                                </div>
+                                <div class="sent-form">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" ></button>
+                                            <h4 class="modal-title" id="exampleModalLabel">Submit a comment</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name" class="control-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="control-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="box company-info ">
+                                <div class="title clearfix">
+                                    <h3><a href="#" class="name">Business Information</a></h3>
+                                </div>
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('.company-info .bxslider').bxSlider({
+                                            pager: false,
+                                            prevSelector: '#prev-company-info',
+                                            nextSelector: '#next-company-info',
+                                            slideWidth: 4000, // Chiều dài của một item
+                                            minSlides: 4, // Số item nhỏ nhất có thể hiển thị
+                                            maxSlides: 4, // Số item lớn nhất có thể hiển thị
+                                            moveSlides: 4, // số item mỗi lần di chuyển
+                                            slideMargin: 15 // khoảng cách giữa các item
+                                        });
+                                    });
+                                </script>
+                                <div class="slider-zone ">
+                                    <div class="control">
+                                        <span id="prev-company-info" class="slider-prev "><a class="bx-prev" href="">Prev</a></span>
+                                        <span id="next-company-info" class="slider-next"><a class="bx-next" href="">Next</a></span>
+                                    </div>
+                                    <div class="bx-wrapper" style="max-width: 16060px; margin: 0 auto;">
+                                        <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 185px;">
+                                            <ul class="bxslider" style="width: 1015%; position: relative; transition-duration: 0s; transform: translate3d(-640px, 0px, 0px);">
+                                                <li style="float: left; list-style: none; position: relative; width: 140px; margin-right: 20px;" class="bx-clone">
+                                                    <article class="story">
+                                                        <figure class="cover">
+                                                            <a href="#">
+                                                                <img src="photo/toplist/9.jpg"   />
+                                                            </a>
+                                                        </figure>
+                                                        <header>
+                                                            <h2 class="title">
+                                                                <a class="cms-link" href="#">Promotion shock reduction </a></h2>
+                                                        </header>
+                                                    </article>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 140px; margin-right: 20px;" class="bx-clone">
+                                                    <article class="story">
+                                                        <figure class="cover">
+                                                            <a href="#">
+                                                                <img src="photo/toplist/10.jpg" />
+                                                            </a>
+                                                        </figure>
+                                                        <header>
+                                                            <h2 class="title">
+                                                                <a class="cms-link" href="#">Celebrate 2017 with many long legs</a></h2>
+                                                        </header>
+                                                    </article>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 140px; margin-right: 20px;" class="bx-clone">
+                                                    <article class="story">
+                                                        <figure class="cover">
+                                                            <a href="#">
+                                                                <img src="photo/toplist/11.jpg" />
+                                                            </a>
+                                                        </figure>
+                                                        <header>
+                                                            <h2 class="title">
+                                                                <a class="cms-link" href="#">Revealed: Elon Musk's new idea</a></h2>
+                                                        </header>
+                                                    </article>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 140px; margin-right: 20px;" class="bx-clone">
+                                                    <article class="story">
+                                                        <figure class="cover">
+                                                            <a href="#">
+                                                                <img src="photo/toplist/12.png" />
+                                                            </a>
+                                                        </figure>
+                                                        <header>
+                                                            <h2 class="title">
+                                                                <a class="cms-link" href="#">How 'Thelma' still drives Geena Davis</a></h2>
+                                                        </header>
+                                                    </article>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 140px; margin-right: 20px;" class="bx-clone">
+                                                    <article class="story">
+                                                        <figure class="cover">
+                                                            <a href="#">
+                                                                <img src="photo/toplist/13.jpg" />
+                                                            </a>
+                                                        </figure>
+                                                        <header>
+                                                            <h2 class="title">
+                                                                <a class="cms-link" href="#">$12k luxury festival descends into chaos</a></h2>
+                                                        </header>
+                                                    </article>
+                                                </li>
+                                                <li style="float: left; list-style: none; position: relative; width: 140px; margin-right: 20px;" class="bx-clone">
+                                                <article class="story">
+                                                    <figure class="cover">
+                                                        <a href="#">
+                                                            <img src="photo/toplist/14.jpg" />
+                                                        </a>
+                                                    </figure>
+                                                    <header>
+                                                        <h2 class="title">
+                                                            <a class="cms-link" href="#">Cashier gives armed robber a side of chill</a></h2>
+                                                    </header>
+                                                </article>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="box-item-conter">
+                                <div class="title clearfix">
+                                    <h3><a href="#" class="name">Business Information</a></h3>
+                                </div>
+                                <div class="post1 ">
+                                    <div class="post-img-1">
+                                        <img src="photo/intuc/14.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="post-h3-1 imglist">
+                                        <a href="#"><strong>Trump's first 100 days: a president's very public education</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>2th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Health care is complicated. China can be a useful ally. NATO isn’t obsolete. Being president is hard. Over the course of his 100 days in office, President Donald Trump has been startlingly candid about his public education in the ways of Washington and the ...</p>
+                                        <a class="-right-1" href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="post1">
+                                    <div class="post-img-1">
+                                        <img src="photo/intuc/15.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="post-h3-1 imglist">
+                                        <a href="#"><strong>Cost-cutting keeps Tepco in black but nuclear redress taking toll</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>2th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p> Tokyo Electric said Friday that it stayed in the black in fiscal 2016 for the fourth consecutive year thanks to cost-cutting efforts after the 2011 triple core meltdown at the Fukushima No. 1 power plant. But the beleaguered utility, which is effectively under state ...</p>
+                                        <a class="-right-1" href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="post1 ">
+                                    <div class="post-img-1">
+                                        <img src="photo/intuc/16.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="post-h3-1 imglist">
+                                        <a href="#"><strong>Joshua floors Klitschko in heavyweight title bout</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>2th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p> Anthony Joshua wasn’t wrong when he raised his hands in victory after knocking down Wladimir Klitschko in the fifth round of what looked like a one-sided heavyweight title fight. He was just celebrating too early. The rookie mistake allowed Klitschko to rally, nearly taking ...</p>
+                                        <a class="-right-1" href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="post1 ">
+                                    <div class="post-img-1">
+                                        <img src="photo/intuc/17.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="post-h3-1 imglist">
+                                        <a href="#"><strong>Japan fares well at Salone del Mobile</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>2th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Once again, Salone del Mobile Milano, the world's largest furniture and interiors trade fair, provides a platform for some of Japan's most innovative ideas on both practical and conceptual design.</p>
+                                        <a class="-right-1" href="#">Read more</a>
+                                    </div>
+                                </div>
+                                <div class="post1 ">
+                                    <div class="post-img-1">
+                                        <img src="photo/intuc/18.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="post-h3-1 imglist">
+                                        <a href="#"><strong>'Yoshida's Dilemma: One Man's Struggle to Avert Nuclear Catastrophe': But for him, Fukushima could have been much worse</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>2th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>But for this man and his team, the Fukushima disaster would likely have been much worse.</p>
+                                        <a class="-right-1" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="read-more text-center">Read more</div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <div class="list-right">
+                        <div class="heading">
+                            <a href="#">Photos and events</a>
+                        </div>
+                        <div class="list-right-img w3-hover-black">
+                            <div class="w3-display-topleft w3-black w3-padding ">Hourly</div>
+                            <a href="images/news/3.jpg"  class="image-link">
+                                <img src="images/news/3.jpg" alt="truml" style="width: 100%;" class="img-responsive ">
+                            </a>
+                            <div class="hr"></div>
+                            <div class="list-right-img-text">
+                                <p><span>Russia and China</span>The 'axis of evil' is back</p>
+                            </div>
+                        </div>
+                        <div class="list-right-img w3-hover-black">
+                            <div class="w3-display-topleft w3-black w3-padding">Hourly</div>
+                            <a href="">
+                                <img src="images/news/4.jpg" alt="truml" style="width: 100%;" class="img-responsive">
+                            </a>
+                            <div class="hr"></div>
+                            <div class="list-right-img-text">
+                                <p><span>Russia and China</span>The 'axis of evil' is back</p>
+                            </div>
+                        </div>
+                        <div class="list-right-img w3-hover-black">
+                            <div class="w3-display-topleft w3-black w3-padding">Hourly</div>
+                            <a href="">
+                                <img src="images/news/5.jpg" alt="truml" style="width: 100%;" class="img-responsive">
+                            </a>
+                            <div class="hr"></div>
+                            <div class="list-right-img-text">
+                                <p>China offers two ways to deal with the Korean ..</p>
+                            </div>
+                        </div>
+                        <div class="list-right-img w3-hover-black">
+                            <div class="w3-display-topleft w3-black w3-padding">Hourly</div>
+                            <a href="">
+                                <img src="images/news/6.jpg" alt="truml" style="width: 100%;" class="img-responsive">
+                            </a>
+                            <div class="hr"></div>
+                            <div class="list-right-img-text">
+                                <p>The Korean rocket exploded just a few minutes..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="clearfix poll">
+                            <h2 class="title">Question today</h2>
+                            <p class="ask">What is the third world war?</p>
+                            <p class="answer">
+
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> USD
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> China
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Chosen
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Russia
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> Kore
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> Japan
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7"> No war
+                                </label>
+                            </p>
+                            <p class="action">
+                                <button type="submit" class="btn btn-default votebutton" rel="73">Submit Vote</button>
+                                <a href="#" class="show-result voteresult" rel="73">View results</a>
+                            </p><div style="display: none;" id="loadingvote73"></div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="list-quangcao">
+                        <a href="#"><img src="photo/quangcao/7.gif" border="0" width="100%" height="250" alt="chung cu "></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    
+                </div>
+             </div>
+        </div>
+    </section>
+    <footer>  <!-- Footer -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="logo-footer">
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="h3">Regions</div>
+                        <div class="Regions">
+                            <a href="#" >U.S.</a>
+                            <a href="#" >Americas</a>
+                            <a href="#" >Asia</a>
+                            <a href="#" >China</a>
+                            <a href="#" >Europe</a>
+                            <a href="#" >Middle East</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="h3">Travel</div>
+                        <div class="Regions">
+                            <a href="#" >Business Traveller</a>
+                            <a href="#" >Destinations</a>
+                            <a href="#" >Features</a>
+                            <a href="#" >Food/Drink</a>
+                            <a href="#" >Hotels</a>
+                            <a href="#" >Partner Hotels</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="h3">Style</div>
+                        <div class="Regions">
+                            <a href="#" >Fashion</a>
+                            <a href="#" >Design</a>
+                            <a href="#" >Architecture</a>
+                            <a href="#" >Arts</a>
+                            <a href="#" >Autos</a>
+                            <a href="#" >Luxury</a>
+                            <a href="#" >PHP</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="h3"> Introduce</div>
+                        <div class="Latest">
+                            <p><strong>MDS Online Newspaper</strong></p>
+                            <p><strong>Editor in Chief:</strong> ANnavôzva</p>
+                            <p><strong>Responsible:</strong> MDS</p>
+                            <p>All Rights Reserved by MDS</p>
+                            <p>Manufactured and designed by MDS in 2017</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="h3"> Introduce</div>
+                        <div class="Latest">
+                            <p> <strong>AD CONTACT: ADMICRO</strong></p>
+                            <p>Hotline: 04 899999XXXX</p>
+                            <p>Email: eltronnic@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

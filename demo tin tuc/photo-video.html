@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đời Công Nghệ ,Find the latest breaking news and information on the top stories, weather, business, entertainment, politics, and more.</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Insert to your webpage before the </head> -->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+    <script src="js/main.js"></script>
+    <!-- galleriffic -->
+    <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+    <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+    <!-- End of head section HTML codes -->
+    <link href="css/style-2.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/icon.png" />
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="header-logo text-center">
+                    <img src="images/logo.png"  />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="header-search-button">
+                    <div class="search">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Keywords, korean, fine, nuclear .... news in the country">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="button text-center">
+                        <button type="button" class="nbt btn-success">Latest news</button>
+                        <button type="button" class="nbt btn-info">Russia</button>
+                        <button type="button" class="nbt btn-info">China</button>
+                        <button type="button" class="nbt btn-info">East Sea</button>
+                        <button type="button" class="nbt btn-info">24H through</button>
+                        <button type="button" class="nbt btn-warning">Chosen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="header-icon-language">
+                    <ul id="lang">
+                        <li>
+                            <a href="#" class="zh">ZH</a>
+                        </li>
+                        <li>
+                            <a href="#" class="fr">FR</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="es">ES</a>
+                        </li>
+                        <li>
+                            <a href="#" class="de">DE</a>
+                        </li>
+                        <li>
+                            <a href="#" class="en langact">EN</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-send"></span> Send</button>
+                    <button type="button" class="btn btn-default">Fica</button>
+                    <button type="button" class="btn btn-default">Default</button>
+                    <p><i>Wish you all a happy day !</i><p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="row navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"  href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="new.html">News</a></li>
+                        <li><a href="index.html">World</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Technology<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Photos you</a></li>
+                                <li><a href="#">Paid Partner</a></li>
+                                <li><a href="#">In Case</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fast news<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Photos you</a></li>
+                                <li><a href="#">Paid Partner</a></li>
+                                <li><a href="#">In Case</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="main_gallery">
+                    <div id="gallery" class="content-gallery">
+                        <div class="slideshow-container">
+                            <div id="slideshow" class="slideshow"></div>
+                            <div id="caption" class="caption-container"></div>
+                        </div>
+                    </div>
+                    <!-- Navigation Thumbs  -->
+                    <div id="thumbs" class="navigation">
+                        <ul class="thumbs noscript">
+                            <li>
+                               <a class="thumb" name="leaf" href="photo/intuc/161110164459-forest-green-rovers-gal-1-super-169.jpg" title="Agrocore">
+                                    <img src="photo/intuc/161110164459-forest-green-rovers-gal-1-super-169.jpg" alt="Agrocore" />
+                                </a>
+                                <div class="caption">
+                                    <div class="indent1">living set </div>
+                                    <div class="image-desc">Cool looking but extremely functional and comfortable. The colours black and white dominate throughout.<br />
+                                        Sleek and stylish interior to suit your taste.</div>
+                                    <div class="indent"><h4>Contemporary</h4></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="photo/intuc/161110164501-forest-green-rovers-gal-2-super-169.jpg" title="ProClinique">
+                                    <img src="photo/intuc/161110164501-forest-green-rovers-gal-2-super-169.jpg" alt="ProClinique" />
+                                </a>
+                                <div class="caption">
+                                    <div class="indent1">in grey</div>
+                                    <div class="image-desc">Luxury living is being redefined and emphasis is being laid on comfortable living, without compromising on style, modest in the color codes</div>
+                                    <div class="indent"><h4>Sitting room </h4></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="photo/intuc/161110164502-forest-green-rovers-gal-3-super-169.jpg" title="Beauty">
+                                    <img src="photo/intuc/161110164502-forest-green-rovers-gal-3-super-169.jpg" alt="Beauty" />
+                                </a>
+                                <div class="caption">
+                                    <div class="indent1">living set </div>
+                                    <div class="image-desc">Cool looking but extremely functional and comfortable. The colours black and white dominate throughout.<br />
+                                        Sleek and stylish interior to suit your taste.</div>
+                                    <div class="indent"><h4>Contemporary</h4></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="thumb" name="leaf" href="photo/intuc/161110164459-forest-green-rovers-gal-4-super-169.jpg" title="Market">
+                                    <img src="photo/intuc/161110164459-forest-green-rovers-gal-4-super-169.jpg" alt="Market" />
+                                </a>
+                                <div class="caption">
+                                    <div class="indent1">in grey  </div>
+                                    <div class="image-desc">Luxury living is being redefined and emphasis is being laid on comfortable living, without compromising on style, modest in the color codes</div>
+                                    <div class="indent"><h4>Sitting room </h4></div>
+                                </div>
+                            </li>
+                            <li class="last">
+                                <a class="thumb" name="leaf" href="photo/intuc/161110164459-forest-green-rovers-gal-5-super-169.jpg" title="Business">
+                                    <img src="photo/intuc/161110164459-forest-green-rovers-gal-5-super-169.jpg" alt="Business" />
+                                </a>
+                                <div class="caption">
+                                    <div class="indent1">living set </div>
+                                    <div class="image-desc">Cool looking but extremely functional and comfortable. The colours black and white dominate throughout.<br />
+                                        Sleek and stylish interior to suit your taste.</div>
+                                    <div class="indent"><h4>Contemporary</h4></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Navigation Thumbs -->
+                </div>
+                <!-- End Main -->
+            </div>
+        </div>
+    </div>
+</section>
+<footer>  <!-- Footer -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="logo-footer">
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="h3">Regions</div>
+                        <div class="Regions">
+                            <a href="#" >U.S.</a>
+                            <a href="#" >Americas</a>
+                            <a href="#" >Asia</a>
+                            <a href="#" >China</a>
+                            <a href="#" >Europe</a>
+                            <a href="#" >Middle East</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="h3">Travel</div>
+                        <div class="Regions">
+                            <a href="#" >Business Traveller</a>
+                            <a href="#" >Destinations</a>
+                            <a href="#" >Features</a>
+                            <a href="#" >Food/Drink</a>
+                            <a href="#" >Hotels</a>
+                            <a href="#" >Partner Hotels</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="h3">Style</div>
+                        <div class="Regions">
+                            <a href="#" >Fashion</a>
+                            <a href="#" >Design</a>
+                            <a href="#" >Architecture</a>
+                            <a href="#" >Arts</a>
+                            <a href="#" >Autos</a>
+                            <a href="#" >Luxury</a>
+                            <a href="#" >PHP</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="h3"> Introduce</div>
+                        <div class="Latest">
+                            <p><strong>MDS Online Newspaper</strong></p>
+                            <p><strong>Editor in Chief:</strong> ANnavôzva</p>
+                            <p><strong>Responsible:</strong> MDS</p>
+                            <p>All Rights Reserved by MDS</p>
+                            <p>Manufactured and designed by MDS in 2017</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="h3"> Introduce</div>
+                        <div class="Latest">
+                            <p> <strong>AD CONTACT: ADMICRO</strong></p>
+                            <p>Hotline: 04 899999XXXX</p>
+                            <p>Email: eltronnic@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        /*$('div.content').css('display', 'block');*/
+        $('div.content-gallery').css('display', 'block');
+
+        var onMouseOutOpacity = 0.5;
+        $('#thumbs ul.thumbs li').opacityrollover({
+            mouseOutOpacity:   onMouseOutOpacity,
+            mouseOverOpacity:  1.0,
+            fadeSpeed:         'fast',
+            exemptionSelector: '.selected'
+        });
+
+        var gallery = $('#thumbs').galleriffic({
+            delay:                     6500,
+            numThumbs:                 10,
+            preloadAhead:              10,
+            enableTopPager:            true,
+            enableBottomPager:         true,
+            maxPagesToShow:            7,
+            imageContainerSel:         '#slideshow',
+            controlsContainerSel:      '#controls',
+            captionContainerSel:       '#caption',
+            loadingContainerSel:       '#loading',
+            renderSSControls:          true,
+            renderNavControls:         true,
+            playLinkText:              'Play Slideshow',
+            pauseLinkText:             'Pause Slideshow',
+            prevLinkText:              'previous',
+            nextLinkText:              'next',
+            nextPageLinkText:          'Next &rsaquo;',
+            prevPageLinkText:          '&lsaquo; Prev',
+            enableHistory:             false,
+            autoStart:                 true,
+            syncTransitions:           true,
+            defaultTransitionDuration: 900,
+            onSlideChange:             function(prevIndex, nextIndex) {
+                this.find('ul.thumbs').children()
+                    .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                    .eq(nextIndex).fadeTo('fast', 1.0);
+            },
+            onPageTransitionOut:       function(callback) {
+                this.fadeTo('fast', 0.0, callback);
+            },
+            onPageTransitionIn:        function() {
+                this.fadeTo('fast', 1.0);
+            }
+        });
+    });
+</script>
+</body>
+</html>

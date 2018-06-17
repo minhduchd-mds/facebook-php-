@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Đời Công Nghệ ,Find the latest breaking news and information on the top stories, weather, business, entertainment, politics, and more.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/icon.png" />
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="header-logo text-center">
+                     <img src="images/logo.png"  />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="header-search-button">
+                     <div class="search">
+                         <form>
+                             <div class="input-group">
+                                 <input type="text" class="form-control" placeholder="Keywords, korean, fine, nuclear .... news in the country">
+                                 <div class="input-group-btn">
+                                     <button class="btn btn-default" type="submit">
+                                         <i class="glyphicon glyphicon-search"></i>
+                                     </button>
+                                 </div>
+                             </div>
+                         </form>
+                     </div>
+                    <div class="button text-center">
+                        <button type="button" class="nbt btn-success">Latest news</button>
+                        <button type="button" class="nbt btn-info">Russia</button>
+                        <button type="button" class="nbt btn-info">China</button>
+                        <button type="button" class="nbt btn-info">East Sea</button>
+                        <button type="button" class="nbt btn-info">24H through</button>
+                        <button type="button" class="nbt btn-warning">Chosen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="header-icon-language">
+                    <ul id="lang">
+                        <li>
+                            <a href="#" class="zh">ZH</a>
+                        </li>
+                        <li>
+                            <a href="#" class="fr">FR</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="es">ES</a>
+                        </li>
+                        <li>
+                            <a href="#" class="de">DE</a>
+                        </li>
+                        <li>
+                            <a href="#" class="en langact">EN</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-send"></span> Send</button>
+                    <button type="button" class="btn btn-default">Fica</button>
+                    <button type="button" class="btn btn-default">Default</button>
+                    <p><i>Wish you all a happy day !</i><p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="row navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"  href="#"><span class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="new.html">News</a></li>
+                        <li><a href="#">World</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Technology<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Photos you</a></li>
+                                <li><a href="#">Paid Partner</a></li>
+                                <li><a href="#">In Case</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fast news<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Photos you</a></li>
+                                <li><a href="#">Paid Partner</a></li>
+                                <li><a href="#">In Case</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="slile">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="http://images.outbrain.com/Imaginarium/api/uuid/6e5fdb58fdba43c942bb6d4c03e166a105551c6be918c11f58ad12c6ba225368/712/400/1.0"
+                                                 alt="Image">
+                                            <div class="carousel-caption">
+                                                <a href="#">This skyscraper is literally out of this world</a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="http://images.outbrain.com/Imaginarium/api/uuid/24371c1e037ee610300113e4bb9b77c10d7cb36921d58055db3c2f614e5db690/712/400/1.0"
+                                                 alt="Image">
+                                            <div class="carousel-caption">
+                                                <a href="#">What the Galaxy S8 means for the iPhone 8</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://images.outbrain.com/Imaginarium/api/uuid/0258c2e90993b5d7591b0cb9f3bba57c073e4bfd11e4de5402e9d039b25d029b/712/400/1.0"
+                                                 alt="Image">
+                                            <div class="carousel-caption">
+                                                <a href="#">The headache that ends careers</a>
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://images.outbrain.com/Imaginarium/api/uuid/252586e8e2e52c0fcb4a00a115f470c509df79a8437de2a1b9402d15fed84b1d/712/400/1.0"
+                                                 alt="Image">
+                                            <div class="carousel-caption">
+                                                <a href="#">End of the line for America's long-distance trains?
+                                                    End of the line for America's long-distance trains? </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://i2.cdn.turner.com/money/dam/assets/170403080625-mexico-pena-nieto-merkel-780x439.jpg"
+                                                 alt="Image">
+                                            <div class="carousel-caption">
+                                                <a href="#">Mexico doubles down on pivot away from U.S.</a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button"
+                                       data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button"
+                                       data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 ">
+                                <div class="list-news">
+                                    <div class="heading">
+                                        <a href="#"><strong>News</strong></a>
+                                    </div>
+                                    <div class="row col-xs-4">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <img src="photo/intuc/6.jpg" alt="Lights" class="img-responsive">
+                                                <div class="caption">
+                                                    <p>When students do PG: Must practice to meet both couples ...</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                 <img src="photo/intuc/7.jpg"
+                                                    alt="Nature" class="img-responsive">
+                                                <div class="caption">
+                                                    <p>Son of musician Nguyen Anh 9: "Snow has cursed family..</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class=" col-xs-4">
+                                         <div class="thumbnail">
+                                             <a href="/w3images/fjords.jpg">
+                                                    <img src="photo/intuc/8.jpg"
+                                                    alt="Fjords" class="img-responsive">
+                                                 <div class="caption">
+                                                     <p>Father killed not to the hut, 3-year-old son looking for stream falls...</p>
+                                                 </div>
+                                             </a>
+                                        </div>
+                                    </div>
+                                    <div class="row col-xs-4">
+                                    <div class="thumbnail">
+                                        <a href="/w3images/lights.jpg">
+                                            <img src="photo/intuc/9.jpg"
+                                                 alt="Lights" class="img-responsive">
+                                            <div class="caption">
+                                                <p>Lights Hung Kings' death anniversary holiday and holidays 30 April - 1 May 2017</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                    <div class=" col-xs-4">
+                                    <div class="thumbnail">
+                                        <a href="/w3images/nature.jpg">
+                                            <img src="photo/intuc/10.jpg"
+                                                 alt="Nature" class="img-responsive">
+                                            <div class="caption">
+                                                <p>The young woman was assaulted by 20 thugs: threatened to cut legs if done...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <div class=" col-xs-4">
+                                    <div class="thumbnail">
+                                        <a href="/w3images/fjords.jpg">
+                                            <img src="photo/intuc/12.jpg"
+                                                 alt="Fjords" class="img-responsive">
+                                            <div class="caption">
+                                                <p>Large-scale amphibious shipbuilding, China plotting thing...</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4"><!------------Top stories----------->
+                        <div class="heading">
+                            <a href="#"><strong>Top stories</strong></a>
+                        </div>
+                            <img src="photo/intuc/5.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        <div class="topstories-item-text">
+                            <a href="#">Comedian blasts white women who voted for Trump</a>
+                            <hr>
+                            <a href="#">Opposition cries foul in Ecuador election</a>
+                            <hr>
+                            <a href="#">'Chaos President' Trump needs course correction</a>
+                            <hr>
+                            <a href="#">Teen asylum seeker brutally attacked in UK</a>
+                            <hr>
+                            <a href="#">Colombia mudslide: 254 dead, 43 are kids</a>
+                            <hr>
+                            <a href="#">Trump discusses wiretapping tweet, Merkel in Financial Times</a>
+                        </div>
+                        <div class="topstories-advertisement">
+                            <a href="_bank">
+                            <img src="photo/quangcao/11.jpg" class="img-responsive"/></a>
+                        </div>
+                    </div><!------------End Top stories----------->
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <a href="#"><strong>World News</strong></a>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Mỹ</a></li>
+                            <li><a data-toggle="tab" href="#china">Trung Quốc</a></li>
+                            <li><a data-toggle="tab" href="#nga">Nga</a></li>
+                            <li><a data-toggle="tab" href="#nhat">Nhật</a></li>
+                        </ul>
+
+                        <div class="tab-content fix-tab">
+                            <div id="home" class="tab-pane fade in active fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://baomoi-photo-3.d.za.zdn.vn/w205/17/04/01/272/21913064/6_147218.jpg"
+                                             class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Nhà Trắng tiết lộ thông tin tài chính của quan
+                                            chức</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar"
+                                                     aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard"
+                                                                 aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Các tài liệu do Nhà Trắng công bố tiết lộ hàng triệu USD tài sản của các
+                                            nhân viên cao cấp. Con gái của Tổng thống Trump, Ivanka và chồng, Jared
+                                            Kushner, có tài sản trị giá từ 240..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Báo động vì hai máy bay suýt va chạm tại Cam Ranh</a></li>
+                                    <li><a href="#">Tàu Gepard 3.9 'khủng' nhất Nga chào hàng VN</a></li>
+                                    <li><a href="#">Nhà tù khét tiếng một thời nơi cựu tổng thống Hàn Quốc bị giam giữ</a></li>
+                                </ul>
+
+                            </div>
+                            <div id="china" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://img.f30.vnecdn.net/2017/04/01/download1-1491022041_180x108.jpg"
+                                             class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Đệ nhất phu nhân Trung Quốc được kỳ vọng làm dịu cuộc
+                                            gặp Trump - Tập</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar"
+                                                     aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard"
+                                                                 aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Bà Bành Lệ Viện được cho là sẽ làm dịu mối quan hệ giữa Trung Quốc và Mỹ
+                                            trong cuộc gặp đầu tiên giữa ông Tập Cận Bình và Donald Trump.</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Mỹ báo động đảo nhân tạo phi pháp Trung Quốc, chiến thuật 'cải
+                                        bắp' chiếm Biển Đông</a></li>
+                                    <li><a href="#">Ông Trump nói cuộc gặp ông Tập Cận Bình sẽ 'rất khó khăn'</a>
+                                    </li>
+                                    <li><a href="#">Tiết lộ tài sản của vợ chồng 'đệ nhất tiểu thư' Ivanka
+                                        Trump</a></li>
+                                </ul>
+
+                            </div>
+                            <div id="nga" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://img.f29.vnecdn.net/2017/04/02/s4-reutersmedia-net-1873-1491141105.jpg"
+                                             class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Cựu cố vấn an ninh quốc gia của Trump che đậy khoản thu
+                                            nhập từ Nga</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar"
+                                                     aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard"
+                                                                 aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Ông Michael Flynn, cựu cố vấn an ninh quốc gia của Tổng thống Mỹ Donald
+                                            Trump, từng không công bố những khoản thanh toán từ một kênh truyền
+                                            hình và doanh nghiệp Nga trong bản kê khai tài chính..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Mỹ báo động đảo nhân tạo phi pháp Trung Quốc, chiến thuật 'cải
+                                        bắp' chiếm Biển Đông</a></li>
+                                    <li><a href="#">Ông Trump nói cuộc gặp ông Tập Cận Bình sẽ 'rất khó khăn'</a>
+                                    </li>
+                                    <li><a href="#">Tiết lộ tài sản của vợ chồng 'đệ nhất tiểu thư' Ivanka
+                                        Trump</a></li>
+                                </ul>
+
+                            </div>
+                            <div id="nhat" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://img.f30.vnecdn.net/2017/04/01/nhat-5556-1491062076_180x108.jpg"
+                                             class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Bé gái Việt ở Nhật có thể bị sát hại bằng thắt
+                                            lưng</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar"
+                                                     aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard"
+                                                                 aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Dấu hiệu trên cổ Lê Thị Nhật Linh, cô bé bị sát hại ở tỉnh Chiba, khiến
+                                            cảnh sát phán đoán hung thủ không dùng một sợi dây mảnh..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Phát hiện người đàn ông khả nghi đi theo bé gái Việt bị sát hại
+                                        ở Nhật / Thi thể bé gái Việt bị sát hại ở Nhật sắp hồi hương</a></li>
+                                    <li><a href="#">Ông Trump nói cuộc gặp ông Tập Cận Bình sẽ 'rất khó khăn'</a>
+                                    </li>
+                                    <li><a href="#">Tiết lộ tài sản của vợ chồng 'đệ nhất tiểu thư' Ivanka
+                                        Trump</a></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <a href="#"><strong>Cultural</strong></a>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#amthcu">Ẩm thực</a></li>
+                            <li><a data-toggle="tab" href="#nghethuat">Nghệ thuật </a></li>
+                            <li><a data-toggle="tab" href="#dulich">Du lịch</a></li>
+
+                        </ul>
+
+                        <div class="tab-content fix-tab">
+                            <div id="amthuc" class="tab-pane fade in active fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://baomoi-photo-3.d.za.zdn.vn/w205/17/04/03/283/21920360/3_84544.jpg" class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Ăn món này dù ở độ tuổi nào quý ông vẫn luôn sung mãn như thời trai trẻ</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:5</a></i>
+                                        </div>
+                                        <p>Bạn đang mắc chứng yếu sinh lý làm ảnh hưởng đến hạnh phúc gia đình? Bạn cực kỳ lo lắng về vấn đề này? Nhưng đừng bi quan ngoài việc bạn có thể kết hợp các tư thế “yêu” lâu ra thì hãy cùng chúng tôi tham khảo những món ăn..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Báo động vì hai máy bay suýt va chạm tại Cam Ranh</a> </li>
+                                    <li><a href="#">Tàu Gepard 3.9 'khủng' nhất Nga chào hàng VN</a> </li>
+                                    <li><a href="#">Nhà tù khét tiếng một thời nơi cựu tổng thống Hàn Quốc bị giam giữ</a> </li>
+                                </ul>
+
+                            </div>
+                            <div id="nghethuat" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://baomoi-photo-1.d.za.zdn.vn/w205/17/04/03/94/21920769/3_92528.jpg" class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>EXID sẽ biểu diễn tại phố đi bộ Hà Nội</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>EXID sẽ trở lại Việt Nam để trình diễn tại phố đi bộ Hồ Gươm trong chương trình “Những ngày Hàn Quốc tại Hà Nội 2017”</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Clip: EXID quyến rũ, A-pink nữ tính và Seventeen mạnh mẽ tại Hà Nội </a> </li>
+                                    <li><a href="#">Nhóm nhạc EXID tung ca khúc sexy mới</a> </li>
+                                    <li><a href="#">Noo Phước Thịnh “tái ngộ” EXID trong lễ hội văn hóa Hàn Việt</a> </li>
+                                </ul>
+
+                            </div>
+                            <div id="dulich" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://baomoi-photo-3.d.za.zdn.vn/w205/17/04/03/212/21920303/1_122239.jpg" class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Miễn phí, giảm giá vé cho khách tham quan Đại Nội đêm</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Trong tuần cuối tháng 4, giảm 50% giá vé tham quan Đại Nội đêm cho khách đã tham quan ban ngày, miễn phí vé một số lăng, cung cho khách mua vé tuyến 3-4 điểm..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Tết Hàn thực, tìm về quán bánh trôi - chay ngon nức tiếng Hà thành</a> </li>
+                                    <li><a href="#">Libreria Acqua Alta - một chốn đọc sách rất riêng giữa thành phố nổi Venice</a> </li>
+                                    <li><a href="#">Điều ít biết nghệ sĩ violin trẻ Trần Lê Quang Tiến</a> </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <a href="#"><strong>Economy</strong></a>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#kinhdoanh">Kinh doanh</a></li>
+                            <li><a data-toggle="tab" href="#laodongvieclam">Lao động -Việc làm</a></li>
+                            <li><a data-toggle="tab" href="#taichinh">Tài chính</a></li>
+                            <li><a data-toggle="tab" href="#chungkhoan">Chứng khoán</a></li>
+                        </ul>
+                        <div class="tab-content fix-tab">
+                            <div id="kinhdoanh" class="tab-pane fade in active fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://baomoi-photo-1.d.za.zdn.vn/w205/17/04/03/105/21919986/2_132126.jpg" class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Trồng cây tiền tỷ: Khó tin măng tây xanh... xanh giữa vùng 'sa mạc'</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:5</a></i>
+                                        </div>
+                                        <p>Dễ trồng, phù hợp với nhiều loại đất, kể cả đất khô cằn, ít tốn chi phí, lãi cao - đó là nhận xét về hiệu quả kinh tế của người dân trồng măng tây xanh tại tỉnh Ninh Thuận- nơi được coi như "sa mạc" của ..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Lãi 3 triệu đồng/ngày nhờ trồng măng tây xanh</a> </li>
+                                    <li><a href="#">Trồng măng tây xanh nhanh “hốt bạc”</a> </li>
+                                    <li><a href="#">Trồng măng tây ở bãi sông, thu “tiền tươi” mỗi ngày</a> </li>
+                                </ul>
+
+                            </div>
+                            <div id="laodongvieclam" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://baomoi-photo-1.d.za.zdn.vn/w205/17/04/03/94/21920769/3_92528.jpg" class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>EXID sẽ biểu diễn tại phố đi bộ Hà Nội</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>EXID sẽ trở lại Việt Nam để trình diễn tại phố đi bộ Hồ Gươm trong chương trình “Những ngày Hàn Quốc tại Hà Nội 2017”</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Clip: EXID quyến rũ, A-pink nữ tính và Seventeen mạnh mẽ tại Hà Nội </a> </li>
+                                    <li><a href="#">Nhóm nhạc EXID tung ca khúc sexy mới</a> </li>
+                                    <li><a href="#">Noo Phước Thịnh “tái ngộ” EXID trong lễ hội văn hóa Hàn Việt</a> </li>
+                                </ul>
+
+                            </div>
+                            <div id="taichinh" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="http://baomoi-photo-3.d.za.zdn.vn/w205/17/04/03/212/21920303/1_122239.jpg" class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Miễn phí, giảm giá vé cho khách tham quan Đại Nội đêm</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Trong tuần cuối tháng 4, giảm 50% giá vé tham quan Đại Nội đêm cho khách đã tham quan ban ngày, miễn phí vé một số lăng, cung cho khách mua vé tuyến 3-4 điểm..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Tết Hàn thực, tìm về quán bánh trôi - chay ngon nức tiếng Hà thành</a> </li>
+                                    <li><a href="#">Libreria Acqua Alta - một chốn đọc sách rất riêng giữa thành phố nổi Venice</a> </li>
+                                    <li><a href="#">Điều ít biết nghệ sĩ violin trẻ Trần Lê Quang Tiến</a> </li>
+                                </ul>
+
+                            </div>
+                            <div id="chungkhoan" class="tab-pane fade fix-tab-id">
+                                <div class="post">
+                                    <div class="post-img">
+                                        <img src="photo/intuc/6.png" class="img-responsive"/>
+                                    </div>
+                                    <div class="post-h3">
+                                        <a href="#"><strong>Cái khó chưa dứt, PV2 đặt kế hoạch lợi nhuận 2017 vỏn vẹn hơn 3 tỷ</strong></a>
+                                        <div class="time">
+                                            <i><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>1th Jun 2017 </i>
+                                            <i><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> 18:45</a></i>
+                                        </div>
+                                        <p>Năm 2016, PV2 báo lỗ nặng 45 tỷ đồng do trích lập dự phòng..</p>
+                                        <a class="-right" href="#">Xem tiếp</a>
+                                    </div>
+                                </div>
+                                <ul class="listNews-trangtrong">
+                                    <li><a href="#">Cổ phiếu ngành thủy sản liệu có còn hấp dẫn?</a> </li>
+                                    <li><a href="#">Hòa Bình Corp: Cổ tức 2016 đến 45%, kế hoạch lợi nhuận sau thuế 757 tỷ đồng</a> </li>
+                                    <li><a href="#">Vietjet 'khoe' lãi nghìn tỉ, cổ phiếu tăng nhiệt</a> </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <a href="#"><strong>Video</strong></a>
+                        </div>
+                        <div class="fix-video">
+                            <!-- Insert to your webpage where you want to display the slider -->
+                            <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:750px;padding-left:0px; padding-right:244px;margin:0px auto 0px;">
+                                <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                                    <ul class="amazingslider-slides" style="display:none;">
+                                        <li><img src="images/Np7lObaDiBk.jpg" alt="Obama forgets to salute"  title="Obama forgets to salute" data-description="President Obama forgot to salute when he boarded Marine One. He later realized his mistake and went back to the Marine." />
+                                            <video preload="none" src="https://www.youtube.com/embed/Np7lObaDiBk?v=Np7lObaDiBk&list=PUupvZG-5ko_eiXAupbDfxWw" ></video>
+                                        </li>
+                                        <li><img src="images/2NPPE6a7mSI.jpg" alt="Trump supporter leaves CNN anchor speechless"  title="Trump supporter leaves CNN anchor speechless" data-description="Asked what she thought of his controversial 2005 remarks, Donald Trump supporter Vicki Sciolaro told CNN&apos;s Brooke Baldwin that he&apos;s not &quot;running for pope&quot; and would not have said those things if he knew he was being recorded." />
+                                            <video preload="none" src="https://www.youtube.com/embed/2NPPE6a7mSI?v=2NPPE6a7mSI&list=PUupvZG-5ko_eiXAupbDfxWw&index=2" ></video>
+                                        </li>
+                                        <li><img src="images/7eabz4V-tvU.jpg" alt="Skydiving cats cause uproar"  title="Skydiving cats cause uproar" data-description="Fur flies over a video of skydiving cats" />
+                                            <video preload="none" src="https://www.youtube.com/embed/7eabz4V-tvU?v=7eabz4V-tvU&list=PUupvZG-5ko_eiXAupbDfxWw&index=4" ></video>
+                                        </li>
+                                        <li><img src="images/X4N936oDeWI.jpg" alt="Panther sneaks up behind man and then ..."  title="Panther sneaks up behind man and then ..." data-description="Sneaky panther seems ready to pounce on &quot;victim&quot; and then ." />
+                                            <video preload="none" src="https://www.youtube.com/embed/X4N936oDeWI?v=X4N936oDeWI&list=PUupvZG-5ko_eiXAupbDfxWw&index=6" ></video>
+                                        </li>
+                                        <li><img src="images/DYAbn0AkDOI.jpg" alt="President Obama caught on open mic"  title="President Obama caught on open mic" data-description="The White House is downplaying some behind-the-scenes remarks made about the budget battle that were caught on tape." />
+                                            <video preload="none" src="https://www.youtube.com/embed/DYAbn0AkDOI?v=DYAbn0AkDOI&list=PUupvZG-5ko_eiXAupbDfxWw&index=10" ></video>
+                                        </li>
+                                    </ul>
+                                    <ul class="amazingslider-thumbnails" style="display:none;">
+                                        <li><img src="images/Np7lObaDiBk-tn.jpg" alt="Obama forgets to salute" title="Obama forgets to salute" /></li>
+                                        <li><img src="images/2NPPE6a7mSI-tn.jpg" alt="Trump supporter leaves CNN anchor speechless" title="Trump supporter leaves CNN anchor speechless" /></li>
+                                        <li><img src="images/7eabz4V-tvU-tn.jpg" alt="Skydiving cats cause uproar" title="Skydiving cats cause uproar" /></li>
+                                        <li><img src="images/X4N936oDeWI-tn.jpg" alt="Panther sneaks up behind man and then ..." title="Panther sneaks up behind man and then ..." /></li>
+                                        <li><img src="images/DYAbn0AkDOI-tn.jpg" alt="President Obama caught on open mic" title="President Obama caught on open mic" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End of body section HTML codes -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The right side -->
+            <div class="col-xs-12 col-md-4 col-lg-4">
+                <div class="row">
+                    <div class="col-sm-12"><!--------------- Top list------------------>
+                        <div class="toplist-toplist">
+                            <div class="heading">
+                                <a href="#"><strong>Top list</strong></a>
+                            </div>
+                            <div class="toplist-item-text">
+                                <div class="toplist">
+                                    <span class="glyphicon glyphicon-circle-arrow-right fix-glyphicon " aria-hidden="true" > </span>
+                                    <a href="#">Trump praises 'rigorous science' on Earth Day</a>
+                                </div>
+                                <div class="toplist">
+                                    <span class="glyphicon glyphicon-circle-arrow-right fix-glyphicon" aria-hidden="true"> </span>
+                                    <a href="#">3 charged in first US genital mutilation case</a>
+                                </div>
+                                <div class="toplist">
+                                    <span class="glyphicon glyphicon-circle-arrow-right fix-glyphicon" aria-hidden="true"> </span>
+                                    <a href="#">Tempers flare, mom in tears after airline fight</a>
+                                </div>
+                                <div class="toplist">
+                                    <span class="glyphicon glyphicon-circle-arrow-right fix-glyphicon" aria-hidden="true"> </span>
+                                    <a href="#">Venezuela tells Colombia to return deserters</a>
+                                </div>
+                                <div class="toplist">
+                                    <span class="glyphicon glyphicon-circle-arrow-right fix-glyphicon" aria-hidden="true"> </span>
+                                    <a href="#">Trump to mark 100th day with 'big rally'</a>
+                                </div>
+                                <div class="toplist">
+                                    <span class="glyphicon glyphicon-circle-arrow-right fix-glyphicon" aria-hidden="true"> </span>
+                                    <a href="#">Putin's huge Arctic military base</a>
+                                </div>
+                                <div class="toplist">
+                                    <span class="glyphicon glyphicon-circle-arrow-right fix-glyphicon" aria-hidden="true"> </span>
+                                    <a href="#">New tower smashes 3 records</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!---------------End Top list------------------>
+                    <div class="col-sm-12"><!--------------- Opinion------------------>
+                        <div class="qpinion">
+                            <div class="heading">
+                                <a href="#"><strong>Opinion</strong></a>
+                            </div>
+                            <div class="qpinion-item-img-text">
+                                <div class="thumbnail-fixlist">
+                                    <img src="photo/toplist/1.jpg" class="img-responsive"  alt="Image">
+                                    <div class="imglist">
+                                        <a href="#"><span>Michael D'Antonio:</span>Ivanka and Jared's millions won't help them</a>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-fixlist">
+                                    <img src="photo/toplist/2.jpg" class="img-responsive"  alt="Image">
+                                    <div class="imglist">
+                                        <a href="#"><strong>Aaron David Miller, Richard Sokolsky:</strong> Donald Trump's Arab fantasy</a>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-fixlist">
+                                    <img src="photo/toplist/3.jpg" class="img-responsive"  alt="Image">
+                                    <div class="imglist">
+                                        <a href="#"><strong>Dean Obeidallah:</strong> What Alec Baldwin gets wrong about his Trump impression</a>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-fixlist">
+                                    <img src="photo/toplist/4.jpg" class="img-responsive"  alt="Image">
+                                    <div class="imglist">
+                                        <a href="#"><strong>David A. Andelman: </strong>President Trump, what's your endgame?</a>
+                                    </div>
+                                </div>
+                                <div class="thumbnail-fixlist">
+                                    <img src="photo/toplist/5.jpg" class="img-responsive"  alt="Image">
+                                    <div class="imglist">
+                                        <a href="#"><strong>N. Korea</strong>-linked hackers attacking banks</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!---------------End Opinion------------------>
+                    <div class="col-sm-12"><!---------------Join our social network alliance------------------>
+                        <div class="social-network">
+                            <div class="heading">
+                                <a href="#"><strong>Join our social network alliance</strong></a>
+                            </div>
+                            <div class="fix-social">
+                                <a href="#" target="_blank" class="hover-color-facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" target="_blank" class="hover-color-twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" target="_blank" class="hover-color-google-plus"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" target="_blank" class="hover-color-rss"><i class="fa fa-rss"></i></a>
+                                <a href="#" target="_blank" class="hover-color-youtube"><i class="fa fa-youtube-play"></i></a>
+                                <a href="#" target="_blank" class="hover-color-linkedin"><i class="fa fa-linkedin"></i></a>
+                                <a href="#" target="_blank" class="hover-color-dribbble"><i class="fa fa-dribbble"></i></a>
+                                <a href="#" target="_blank" class="hover-color-pinterest"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div><!---------------End Join our social network alliance------------------>
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <a href="#"><strong>Advertisement</strong></a>
+                        </div>
+                        <div class="fix-quang-cao">
+                            <a href="#"><img src="photo/quangcao/1.png" class="img-responsive"  alt="Image"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="heading">
+                            <a href="#"><strong>Weather</strong></a>
+                        </div>
+                        <div class="fix-thoi-tiet">
+                            <iframe frameborder="0" marginwidth="0" marginheight="0" src="http://thienduongweb.com/tool/weather/?r=1&w=1&g=1&d=2" width="100%" height="370" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of The right side -->
+        </div>
+    </div>
+</section>
+<footer>  <!-- Footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div  class="col-sm-2">
+                        <div class="footer-list-Rgions Regions">
+                            <h3 class="h3">Regions</h3>
+                                <a href="#" >U.S.</a>
+                                <a href="#" >Americas</a>
+                                <a href="#" >Asia</a>
+                                <a href="#" >China</a>
+                                <a href="#" >Europe</a>
+                                <a href="#" >Middle East</a>
+                        </div>
+                    </div>
+                    <div  class="col-sm-2">
+                        <div class="Regions">
+                        <h3 class="h3">Travel</h3>
+
+                            <a href="#" >Business Traveller</a>
+                            <a href="#" >Destinations</a>
+                            <a href="#" >Features</a>
+                            <a href="#" >Food/Drink</a>
+                            <a href="#" >Hotels</a>
+                            <a href="#" >Partner Hotels</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="Regions">
+                        <h3 class="h3">Style</h3>
+                            <a href="#" >Fashion</a>
+                            <a href="#" >Design</a>
+                            <a href="#" >Architecture</a>
+                            <a href="#" >Arts</a>
+                            <a href="#" >Autos</a>
+                            <a href="#" >Luxury</a>
+                            <a href="#" >PHP</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3 class="h3">Introduce</h3>
+                        <div class="Latest">
+                            <p><strong>MDS Online Newspaper</strong></p>
+                            <p><strong>Editor in Chief:</strong> ANnavôzva</p>
+                            <p><strong>Responsible:</strong> MDS</p>
+                            <p>All Rights Reserved by MDS</p>
+                            <p>Manufactured and designed by MDS in 2017</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h3 class="h3">Introduce</h3>
+                        <div class="Latest">
+                            <p> <strong>AD CONTACT: ADMICRO</strong></p>
+                            <p>Hotline: 04 899999XXXX</p>
+                            <p>Email: eltronnic@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+</body>
+</html>
+
