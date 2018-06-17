@@ -1,0 +1,309 @@
+/*==============================================
+    name : MDS
+    themes : shopping
+
+
+
+*/
+
+/******************************************
+1. Common styles
+******************************************/
+
+body {
+    background: #f4f4f4;
+    color: #39342e;
+    font-family: 'Helvetica Neue',Helvetica,RobotoRegular,'Droid Sans',Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+* {
+    margin: 0;
+    padding: 0
+}
+img {
+    border: 0;
+    max-width: 100%
+}
+a:hover, a:focus {
+    outline: none;
+}
+a {
+    color: #39342e;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+h6{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: none;
+    font-family: "Roboto", sans-serif;
+}
+.page-title > form{
+    float: left;
+}
+/* @font-face kit */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(../fonts/lato/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato 900'), local('Lato-900'), url(../fonts/lato/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(../fonts/lato/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
+}
+/******************************************
+2. Header
+******************************************/
+.header-container{ background-color:#fff;}
+/*2.1 welcome info */
+.welcome-info {
+    background-color: #fff;
+    border-bottom: 1px #e5e5e5 solid;
+    padding: 30px 0px 60px;
+    text-align: center
+}
+@media (max-width:767px) {
+    .welcome-info {
+        padding: 10px 0px 30px
+    }
+}
+.welcome-info .page-header {
+    margin-top: 10px
+}
+.welcome-info .page-header h1 {
+    color: #39342e;
+    font-size: 40px
+}
+@media (max-width:767px) {
+    .welcome-info .page-header h1 {
+        font-size: 30px
+    }
+}
+.welcome-info .page-header p {
+    font-size: 30px
+}
+@media (max-width:767px) {
+    .welcome-info .page-header p {
+        font-size: 20px;
+        line-height: 35px
+    }
+}
+.welcome-info .page-header p em {
+    font-style: normal;
+    border-bottom: 2px #4caf50 solid;
+    padding-bottom: 5px
+}
+@media (max-width:767px) {
+    .welcome-info .page-header p em {
+        padding-bottom: 2px
+    }
+}
+.welcome-info .page-header .text-main {
+    color: #4caf50
+}
+/*2.2 header top */
+.header-top {
+    background: #242424;
+    border-bottom: 1px solid #000;
+    line-height: 32px;
+    width: 100%;
+    color: #ccc;
+}
+.header-top a {
+    color: #ccc
+}
+.header-top a:hover {
+    color: #4caf50;
+}
+.welcome-msg {
+    text-align: left;
+    display: inline-block;
+    padding: 2px 15px 2px 0;
+    margin: 0 12px 0 0;
+    font-size: 13px;
+    border-right: 1px solid #000;
+}
+.phone {
+    padding: 2px 0 2px 0;
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .welcome-msg {
+        float: left
+    }
+    .header-menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width:479px) {
+    .header-menu {
+        padding-left: 0px
+    }
+}
+.header-menu  {
+    line-height: normal;
+    display: inline-block;
+    text-align: right;
+    float: right
+}
+.header-menu  .links {
+    display: inline-block
+}
+.header-menu  .links div {
+    display: inline-block;
+    text-align: right
+}
+.header-menu  div.links div a {
+    display: inline-block;
+    padding: 0px;
+    padding: 10px 10px 5px 8px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #ccc;
+}
+.header-menu  div.links div a span {
+    margin-left: 8px
+}
+.header-menu  div.links div a:hover {
+    color: #4caf50;
+    text-decoration: none
+}
+/*2.3 header-logo*/
+.logo {
+    vertical-align: middle;
+    margin-top: 15px;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+@media (max-width:640px) {
+    .logo {
+        margin-top: 15px;
+        text-align: center;
+        padding-bottom: 12px;
+        margin-bottom: 0px;
+        width: 100%
+    }
+}
+@media (max-width:479px) {
+    header .logo a img {
+        width: 45%
+    }
+}
+@media (max-width:768px) {
+    header .logo a img {
+        width: auto
+    }
+}
+/*2.4 header-nav*/
+a.nav-link {
+    font-size: 18px;
+    font-weight: 700;
+    color: #39342e;
+}
+li.nav-item {
+    padding: 0 35px 0 0;
+}
+.mini-cart .basket a {
+    color: #39342e;
+    margin: 0px;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 11px 0px 10px 0px;
+}
+.cart-icon, .shoppingcart-inner {
+    float: left;
+    text-align: left;
+    padding-left: 15px;
+}
+/******************************************
+3. Slider
+******************************************/
+.page-main{
+    min-height: 350px;
+    padding: 25px 0 0px;
+}
+.carousel-inner{
+    height: 500px;
+}
+.carousel-inner > .carousel-item > img{
+    height: 500px;
+    width: 100%;
+}
+/******************************************
+4. Section  slider-foods
+******************************************/
+/*4.1  slider-foods */
+#slider-foods{
+    padding: 3rem 0;
+}
+#get,.shoping{
+    padding: 20px;
+    background-color: #fff;
+    border: 1px #e6e6e6 solid;
+    margin-bottom: 30px;
+}
+
+.card-hover{
+
+}
+.card-hover:hover .card-img-overlay {
+    transform: scale(1)
+}
+.card-img{
+    display: block;
+    height: 260px;
+    width: 100%;
+}
+.card-img-overlay{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.card-img-fixd{
+    height: 546px;
+}
+.card-body {
+    padding: 1rem 1rem 1rem 1rem;
+}
+.card-body >a {
+    margin: 0 3.6rem;
+    padding: 6px;
+}
+.card > img.img-fixd{
+    height: 160px;
+    width: 100%;
+}
+.card > .card-body > p.picer{
+    color: #4caf50;
+    font-size: 16px;
+    font-weight: 700;
+
+}
